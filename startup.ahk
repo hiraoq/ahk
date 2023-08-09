@@ -36,10 +36,12 @@ F13 & Enter::Send {Blind}^{Enter}
 F13 & Space::Send {Blind}^{Space}
 F13 & Tab::Send {Blind}^{Tab}
 F13 & Ins::Send {Blind}^{Ins}
-F13 & Home::Send {Blind}^{Home}
-F13 & End::Send {Blind}^{End}
-F13 & PgUp::Send {Blind}^{PgUp}
-F13 & PgDn::Send {Blind}^{PgDn}
+; 仮想デスクトップ切り替えに割り当て
+; F13 & Home::Send {Blind}^{Home}
+; F13 & End::Send {Blind}^{End}
+; 単語移動に割り当て
+; F13 & PgUp::Send {Blind}^{PgUp}
+; F13 & PgDn::Send {Blind}^{PgDn}
 F13 & AppsKey::Send {Blind}^{AppsKey}
 F13 & PrintScreen::Send {Blind}^{PrintScreen}
 F13 & CtrlBreak::Send {Blind}^{CtrlBreak}
@@ -104,6 +106,15 @@ F13 & m::Send {Blind}{END}
 F13 & ,::Send {Blind}^,
 F13 & .::Send {Blind}^.
 F13 & /::Send {Blind}^/
+
+;仮想デスクトップ切り替え
+F13 & Home::Send ^#{left}
+F13 & End::Send ^#{right}
+
+;単語移動
+F13 & PgUp::Send ^{left}
+F13 & PgDn::Send ^{Right}
+
 
 F13 & LButton::Send {Blind}^{LButton}
 F13 & RButton::Send {Blind}^{RButton}
